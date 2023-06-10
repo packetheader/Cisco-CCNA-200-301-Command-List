@@ -1,10 +1,10 @@
 # Cisco-CCNA-200-301-Command-List
 A summary of Cisco Commands to prepare for the CCNA Exam.
 
-### Changing switch hostname
+## Changing switch hostname
 `Switch(config)#hostname <hostname>`
 
-### Configuring passwords
+## Configuring passwords
 Create password for privileged EXEC mode in Clear text:
 
 `Switch(config)#enable password <password>`
@@ -13,24 +13,24 @@ Create password for privileged EXEC mode with MD5 hash:
 
 `Switch(config)#enable secret <password>`
 
-### Securing console port
+## Securing console port
 ```
 Switch(config)#line con 0
 Switch(config-line)#password <password>
 Switch(config-line)#login
 ```
 
-### Securing terminal lines
+## Securing terminal lines
 ```
 Switch(config)#line vty 0 4
 Switch(config-line)#password <password>
 Switch(config-line)#login
 ```
 
-### Encrypting passwords (new and already created passwords)
+## Encrypting passwords (new and already created passwords)
 ``Switch(config)#service password-encryption?``
 
-### Configuring banner
+## Configuring banner
 ```
 Switch(config)#banner motd %
 
@@ -39,16 +39,16 @@ Switch(config)#banner motd %
 %
 ```
 
-### Set IP addresses
+## Set IP addresses
 ```
 Switch(config)#interface <interface/Vlan> <interface-/vlanid>
 Switch(config-if)#ip address <ip-address> <subnet> (or dhcp)
 ```
 
-### Setting the default gateway
+## Setting the default gateway
 ``Switch(config)#ip default-gateway <ip-address>``
 
-### Save configuration
+## Save configuration
 ```
 Switch#copy running-config startup-config
   - or -
@@ -57,7 +57,7 @@ Switch#write memory
 Switch#write
 ```
 
-### Configuring switch to use SSH
+## Configuring switch to use SSH
 1. Configure DNS domain name
 
 ``Switch(config)#ip domain-name <domain-name>``
