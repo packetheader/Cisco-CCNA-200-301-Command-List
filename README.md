@@ -81,3 +81,16 @@ Switch(config)#line vty 0 4
 Switch(config-line)#login local
 Switch(config-line)#transport input ssh
 ```
+
+## Verify Basic Configuration
+| Command | Description |
+| --- | --- |
+| `Switch#show version` | Shows information about the switch and its interfaces, RAM, NVRAM, flash, IOS, etc. |
+| `Switch#show running-config` | Shows the current configuration file stored in DRAM |
+| `Switch#show startup-config` | Shows the configuration file stored in NVRAM which is used at first boot process |
+| `Switch#show history` | Lists the commands currently held in the history buffer |
+| `Switch#show ip interface brief` | Shows an overview of all interfaces, their physical status (Layer 1), protocol status (Layer 2) and ip address if assigned |
+| `Switch#show interface <interface>` | Shows detailed information about the specified interface, its status, protocol, duplex, speed, encapsulation, last 5 min traffic |
+| `Switch#show interfaces description` | Shows the description of all interfaces |
+| `Switch#show interfaces status` | Shows the status of all interfaces like connected or not, speed, duplex, trunk or access vlan
+| `Switch#show dhcp lease` | Shows information about the leased IP address |
